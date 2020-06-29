@@ -1,80 +1,89 @@
 <h2>Black Jack Test</h2>
 
-<table class="bj-table" tabindex="0" method="post">
+<table class="bj-table" action="" tabindex="0" method="post">
   <thead>
     <tr>
       <th scope="col">#</th>
       <th scope="col">Ante</th>
-      <th scope="col">BJ</th>
       <th scope="col">Pay</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td><input type="text"></td>
+      <td><%= a = rand(11..199)*5 %></td>
+      <td><input type="text" name="rezult"></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td><input type="text"></td>
+      <td><%= rand(11..199)*5 %></td>
+      <td><input type="text" name="rezult"></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td><input type="text"></td>
+      <td><%= rand(11..199)*5 %></td>
+      <td><input type="text" name="rezult"></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row">4</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td><input type="text"></td>
+      <td><%= rand(11..199)*5 %></td>
+      <td><input type="text" name="rezult"></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row">5</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td><input type="text"></td>
+      <td><%= rand(11..199)*5 %></td>
+      <td><input type="text" name="rezult"></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row">6</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td><input type="text"></td>
+      <td><%= rand(11..199)*5 %></td>
+      <td><input type="text" name="rezult"></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row">7</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td><input type="text"></td>
+      <td><%= rand(11..199)*5 %></td>
+      <td><input type="text" name="rezult"></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row">8</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td><input type="text"></td>
+      <td><%= rand(11..199)*5 %></td>
+      <td><input type="text" name="rezult"></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row">9</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td><input type="text"></td>
+      <td><%= rand(11..199)*5 %></td>
+      <td><input type="text" name="rezult"></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row">10</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td><input type="text"></td>
+      <td><%= rand(11..199)*5 %></td>
+      <td><input type="text" name="rezult"></td>
+      <td></td>
     </tr>
     <tr>
       <th scope="row"></th>
       <td></td>
-      <td></td>
-      <td><input type="submit" class="btn btn-success"></td>
+      <td><input type="submit" class="btn btn-success" onSubmit="return check(this);"></td>
     </tr>
   </tbody>
-</table>
+</table><br><br>
+
+<script type="text/javascript">
+  function check(form){
+for (var i=0; i < table.rezult.length; i++)
+{
+	if (table.rezult[i]) return true;
+}
+alert ("Please check for one of the available options");
+return false;
+}
+</script>

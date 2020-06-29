@@ -13,6 +13,7 @@
   </head>
 
   <body>
+    <div class="container">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
@@ -22,8 +23,10 @@
     <div class="container">
     <%= yield %>
     </div>
+    </div>
     <!--footer-->
-    <%= render 'static_pages/footer' %>
+    <br /><br /><%= render 'static_pages/footer' %>
     <!--footer-->
+
   </body>
 </html>
